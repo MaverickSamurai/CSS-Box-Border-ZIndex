@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fffdee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.rings{
+    list-style: none;
+    margin: -160px -330px;
+    position: absolute;
+}
+
+.rings li{
+    border-radius: 20px ;
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: absolute;
+    
+}
+
+.rings li:before, .rings li:after{
+    border-radius: 50%;
+    position: absolute;
+}
+
+.rings li:before{
+    content: "";
+}
+
+.rings li:after{
+    border: 20px solid #000;
+    bottom: 0;
+    content: "";
+    left: -2px;
+    right: -2px;
+    top: -2px;
+}
+
+.rings .blue{
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.rings .blue:after{
+    border-color: #0080cb;
+}
+
+.rings .blue + .chain{
+    z-index: 24;
+}
+
+.rings .blue + .chain:before, .rings .blue + .chain:after{
+    border-bottom-color: transparent;
+}
+
+.rings .yellow {
+    left: 110px;
+    top: 95px;
+    z-index: 20;
+}
+
+.rings .yellow:after {
+    border-color: #fdb408;
+  }
+
+  .rings .yellow + .chain {
+    z-index: 23;
+  }
+
+  .rings .yellow + .chain:before, .rings .yellow + .chain:after {
+    border-right-color: transparent;
+  }
+
+  .rings .black{
+    left: 220px;
+    top: 0;
+    z-index: 21;
+  }
+
+  .rings .black:after {
+    border-color: #000;
+  }
+
+  .rings .green{
+    left: 330px;
+    top: 95px;
+    z-index: 20;
+  }
+
+  .rings .green:after {
+    border-color: #00a84c;
+  }
+
+  .rings .green + .chain {
+    z-index: 23;
+  }
+
+  .rings .green + .chain:before, .rings .green + .chain:after {
+    border-top-color: transparent;
+  }
+
+  .rings .red{
+    left: 440px;
+    top: 0;
+    z-index: 10;
+  }
+
+  .rings .red:after {
+    border-color: #f02c49;
+  }
+
+
+  .rings .red + .chain {
+    z-index: 23;
+  }
+
+
+  .rings .red + .chain:before, .rings .red + .chain:after {
+    border-left-color: transparent;
+  }
+
+  
+
